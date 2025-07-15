@@ -40,7 +40,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground font-audiowide"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground font-audiowide mt-8 sm:mt-12"
             style={{fontFamily: 'Audiowide, cursive'}}
           >
             2025
