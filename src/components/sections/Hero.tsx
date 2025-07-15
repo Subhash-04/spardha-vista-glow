@@ -20,28 +20,23 @@ export const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="container mx-auto text-center relative z-10 max-w-6xl">
-        {/* Main Title - Vertical Stack */}
+        {/* Main Title - Responsive */}
         <motion.div
-          className="flex flex-col items-center justify-center space-y-8 sm:space-y-12 mb-8 sm:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-4 sm:mb-6"
         >
-          {/* SPARDHA - Top */}
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gradient animate-glow-pulse font-audiowide leading-tight" 
-            style={{fontFamily: 'Audiowide, cursive'}}
-          >
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gradient animate-glow-pulse font-audiowide leading-tight" 
+              style={{fontFamily: 'Audiowide, cursive'}}>
             SPARDHA
-          </motion.h1>
-
-          {/* 2025 - Bottom */}
+          </h1>
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground font-audiowide mt-32 sm:mt-40"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground mt-2 sm:mt-4 font-audiowide"
             style={{fontFamily: 'Audiowide, cursive'}}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
           >
             2025
           </motion.div>

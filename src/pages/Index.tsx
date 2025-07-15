@@ -36,16 +36,14 @@ const Index = () => {
 
       {!isLoading && (
         <>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
+          <iframe 
+            src="https://my.spline.design/orb-Aurmcm1KF9YzUZ1hLNRVpVrb/" 
+            frameBorder="0" 
+            width="100%" 
+            height="100%"
             className="fixed inset-0 w-full h-full object-cover"
             style={{ zIndex: 0 }}
-          >
-            <source src="/src/assets/Of_course_here_202507160457.mp4" type="video/mp4" />
-          </video>
+          />
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
