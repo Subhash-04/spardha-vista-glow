@@ -119,23 +119,6 @@ export const About = () => {
               </div>
             </motion.div>
 
-            {/* AI Regenerate Button */}
-            <motion.div
-              className="text-center mt-8"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Button
-                variant="outline"
-                className="crystal-glass group hover:scale-105 transition-all duration-300"
-                // TODO: Add AI regeneration functionality
-              >
-                <Sparkles className="w-4 h-4 mr-2 group-hover:animate-spin" />
-                Regenerate with AI
-              </Button>
-            </motion.div>
           </div>
         </motion.div>
       </div>
