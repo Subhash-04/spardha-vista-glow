@@ -36,7 +36,14 @@ const Index = () => {
 
       {!isLoading && (
         <>
-          <VanillaThreeBackground isDark={isDark} />
+          <iframe 
+            src="https://my.spline.design/orb-Aurmcm1KF9YzUZ1hLNRVpVrb/" 
+            frameBorder="0" 
+            width="100%" 
+            height="100%"
+            className="fixed inset-0 w-full h-full object-cover"
+            style={{ zIndex: 0 }}
+          />
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
