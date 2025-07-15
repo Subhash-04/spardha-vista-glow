@@ -36,14 +36,19 @@ const Index = () => {
 
       {!isLoading && (
         <>
+          {/* Background iframe - conditional based on theme */}
           <iframe 
-            src="https://my.spline.design/orb-Aurmcm1KF9YzUZ1hLNRVpVrb/" 
+            src={isDark ? "https://my.spline.design/orb-Aurmcm1KF9YzUZ1hLNRVpVrb/" : "https://my.spline.design/celestialflowabstractdigitalform-sGlhdH8cA1wEZYjob5CJaesC/"} 
             frameBorder="0" 
             width="100%" 
             height="100%"
             className="fixed inset-0 w-full h-full object-cover"
             style={{ zIndex: 0 }}
           />
+          
+          {/* Watermark coverage */}
+          <div className="fixed bottom-4 right-4 w-32 h-8 bg-background/80 backdrop-blur-sm z-[1]" />
+          <div className="fixed bottom-0 right-0 w-40 h-12 bg-background/60 backdrop-blur-sm z-[1]" />
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
