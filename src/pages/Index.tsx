@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Preloader } from '@/components/layout/Preloader';
 import { Header } from '@/components/layout/Header';
-import { ThreeBackground } from '@/components/3d/ThreeBackground';
+import { VanillaThreeBackground } from '@/components/3d/VanillaThreeBackground';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
 import { Events } from '@/components/sections/Events';
@@ -36,7 +36,7 @@ const Index = () => {
 
       {!isLoading && (
         <>
-          <ThreeBackground isDark={isDark} />
+          <VanillaThreeBackground isDark={isDark} />
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
