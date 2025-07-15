@@ -20,23 +20,39 @@ export const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="container mx-auto text-center relative z-10 max-w-6xl">
-        {/* Main Title - Responsive */}
+        {/* Main Title - Vertical Stack */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-4 sm:mb-6"
+          className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-8 sm:mb-12"
         >
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gradient animate-glow-pulse font-audiowide leading-tight" 
-              style={{fontFamily: 'Audiowide, cursive'}}>
-            SPARDHA
-          </h1>
-          <motion.div
-            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground mt-2 sm:mt-4 font-audiowide"
+          {/* SPARDHA - Top */}
+          <motion.h1
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gradient animate-glow-pulse font-audiowide leading-tight" 
             style={{fontFamily: 'Audiowide, cursive'}}
+          >
+            SPARDHA
+          </motion.h1>
+
+          {/* ACM - Middle */}
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground font-audiowide"
+            style={{fontFamily: 'Audiowide, cursive'}}
+          >
+            ACM
+          </motion.div>
+
+          {/* 2025 - Bottom */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground font-audiowide"
+            style={{fontFamily: 'Audiowide, cursive'}}
           >
             2025
           </motion.div>
