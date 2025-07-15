@@ -22,7 +22,7 @@ export const Hero = () => {
       <div className="container mx-auto text-center relative z-10 max-w-6xl">
         {/* Main Title - Vertical Stack */}
         <motion.div
-          className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 mb-8 sm:mb-12"
+          className="flex flex-col items-center justify-center space-y-8 sm:space-y-12 mb-8 sm:mb-12"
         >
           {/* SPARDHA - Top */}
           <motion.h1
@@ -34,17 +34,6 @@ export const Hero = () => {
           >
             SPARDHA
           </motion.h1>
-
-          {/* ACM - Middle */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground font-audiowide"
-            style={{fontFamily: 'Audiowide, cursive'}}
-          >
-            ACM
-          </motion.div>
 
           {/* 2025 - Bottom */}
           <motion.div
