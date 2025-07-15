@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Preloader } from '@/components/layout/Preloader';
 import { Header } from '@/components/layout/Header';
+import { VanillaThreeBackground } from '@/components/3d/VanillaThreeBackground';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
 import { Events } from '@/components/sections/Events';
@@ -9,7 +10,6 @@ import { Navigation } from '@/components/sections/Navigation';
 import { RegistrationForm } from '@/components/forms/RegistrationForm';
 import { PromoVideo } from '@/components/sections/PromoVideo';
 import { Contact } from '@/components/sections/Contact';
-import backgroundGif from '@/assets/Of_course_here_202507160442.gif';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,18 +36,14 @@ const Index = () => {
 
       {!isLoading && (
         <>
-          <div className="fixed inset-0 w-full h-full overflow-hidden" style={{ zIndex: 0 }}>
-            <img 
-              src={backgroundGif}
-              alt="Animated background"
-              className="w-full h-full object-cover"
-              style={{ 
-                minWidth: '100%',
-                minHeight: '100%',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
+          <iframe 
+            src="https://my.spline.design/orb-Aurmcm1KF9YzUZ1hLNRVpVrb/" 
+            frameBorder="0" 
+            width="100%" 
+            height="100%"
+            className="fixed inset-0 w-full h-full object-cover"
+            style={{ zIndex: 0 }}
+          />
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
