@@ -42,14 +42,22 @@ const Index = () => {
             frameBorder="0" 
             width="100%" 
             height="100%"
-            className="fixed inset-0 w-full h-full object-cover"
+            className="fixed inset-0 w-full h-full"
             style={{ 
               zIndex: 0,
               minHeight: '100vh',
-              minWidth: '100vw'
+              minWidth: '100vw',
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              border: 'none',
+              overflow: 'hidden'
             }}
-            allow="autoplay; encrypted-media"
+            allow="autoplay; encrypted-media; accelerometer; gyroscope"
             loading="eager"
+            scrolling="no"
           />
           
           {/* Watermark coverage */}
