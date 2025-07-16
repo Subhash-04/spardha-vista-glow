@@ -43,7 +43,13 @@ const Index = () => {
             width="100%" 
             height="100%"
             className="fixed inset-0 w-full h-full object-cover"
-            style={{ zIndex: 0 }}
+            style={{ 
+              zIndex: 0,
+              minHeight: '100vh',
+              minWidth: '100vw'
+            }}
+            allow="autoplay; encrypted-media"
+            loading="eager"
           />
           
           {/* Watermark coverage */}
