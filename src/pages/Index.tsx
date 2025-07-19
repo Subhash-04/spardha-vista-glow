@@ -55,8 +55,8 @@ const Index = () => {
             <div 
               className="absolute bottom-0 right-0 bg-background"
               style={{
-                width: '120px',
-                height: '40px',
+                width: '200px',
+                height: '60px',
                 zIndex: 1
               }}
             />
