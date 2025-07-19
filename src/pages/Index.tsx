@@ -38,24 +38,29 @@ const Index = () => {
       {!isLoading && (
         <>
           {/* Background Spline Model */}
-          <iframe 
-            src='https://my.spline.design/blackholewallpaperforlivelywallpaper-qaCLpW6NEH9x15P6N2Ket8Qd/'
-            frameBorder='0' 
-            width='100%' 
-            height='100%'
-            className="fixed inset-0 w-full h-full"
-            style={{ 
-              zIndex: 0,
-              minHeight: '100vh',
-              minWidth: '100vw',
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              border: 'none'
-            }}
-          />
+          <div className="fixed inset-0 w-full h-full" style={{ zIndex: 0 }}>
+            <iframe 
+              src='https://my.spline.design/blackholewallpaperforlivelywallpaper-qaCLpW6NEH9x15P6N2Ket8Qd/'
+              frameBorder='0' 
+              width='100%' 
+              height='100%'
+              className="w-full h-full"
+              style={{ 
+                minHeight: '100vh',
+                minWidth: '100vw',
+                border: 'none'
+              }}
+            />
+            {/* Hide Spline watermark */}
+            <div 
+              className="absolute bottom-0 right-0 bg-background"
+              style={{
+                width: '120px',
+                height: '40px',
+                zIndex: 1
+              }}
+            />
+          </div>
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
