@@ -39,7 +39,7 @@ const Index = () => {
         <>
           {/* Background Spline Model */}
           <iframe 
-            src='https://my.spline.design/blackholewallpaperforlivelywallpaper-qaCLpW6NEH9x15P6N2Ket8Qd/' 
+            src='https://my.spline.design/blackholewallpaperforlivelywallpaper-qaCLpW6NEH9x15P6N2Ket8Qd/'
             frameBorder='0' 
             width='100%' 
             height='100%'
