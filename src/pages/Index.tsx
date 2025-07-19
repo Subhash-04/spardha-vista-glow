@@ -10,6 +10,7 @@ import { Navigation } from '@/components/sections/Navigation';
 import { RegistrationForm } from '@/components/forms/RegistrationForm';
 import { PromoVideo } from '@/components/sections/PromoVideo';
 import { Contact } from '@/components/sections/Contact';
+import backgroundVideo from '@/assets/The_prompt_create_202507191152_ale4m.mp4';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,7 +55,7 @@ const Index = () => {
               bottom: 0
             }}
           >
-            <source src="/src/assets/The_prompt_create_202507191152_ale4m.mp4" type="video/mp4" />
+            <source src={backgroundVideo} type="video/mp4" />
           </video>
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
