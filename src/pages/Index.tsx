@@ -51,12 +51,10 @@ const Index = () => {
                 border: 'none'
               }}
             />
-            {/* Hide Spline watermark */}
+            {/* Hide Spline watermark - responsive across all screen sizes */}
             <div 
-              className="absolute bottom-0 right-0 bg-background"
+              className="absolute bottom-0 right-0 bg-background w-48 h-16 sm:w-56 sm:h-20 md:w-64 md:h-24 lg:w-72 lg:h-28 xl:w-80 xl:h-32"
               style={{
-                width: '200px',
-                height: '60px',
                 zIndex: 1
               }}
             />
