@@ -10,7 +10,7 @@ import { Navigation } from '@/components/sections/Navigation';
 import { RegistrationForm } from '@/components/forms/RegistrationForm';
 import { PromoVideo } from '@/components/sections/PromoVideo';
 import { Contact } from '@/components/sections/Contact';
-import backgroundVideo from '@/assets/The_prompt_create_202507191152_ale4m.mp4';
+
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,13 +37,13 @@ const Index = () => {
 
       {!isLoading && (
         <>
-          {/* Background video */}
-          <video 
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="fixed inset-0 w-full h-full object-cover"
+          {/* Background Spline Model */}
+          <iframe 
+            src='https://my.spline.design/blackholewallpaperforlivelywallpaper-qaCLpW6NEH9x15P6N2Ket8Qd/' 
+            frameBorder='0' 
+            width='100%' 
+            height='100%'
+            className="fixed inset-0 w-full h-full"
             style={{ 
               zIndex: 0,
               minHeight: '100vh',
@@ -52,11 +52,10 @@ const Index = () => {
               top: 0,
               left: 0,
               right: 0,
-              bottom: 0
+              bottom: 0,
+              border: 'none'
             }}
-          >
-            <source src={backgroundVideo} type="video/mp4" />
-          </video>
+          />
           <Header isDark={isDark} onThemeToggle={handleThemeToggle} />
           
           <main className="relative z-10 pt-20">
